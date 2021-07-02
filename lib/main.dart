@@ -56,7 +56,9 @@ class _MyAppState extends State<MyApp> {
                             return Scaffold(
                                 resizeToAvoidBottomInset: false,
                                 backgroundColor: Colors.transparent,
-                                body: ProductDetailModal());
+                                body: ProductDetailModal(
+                                  productInfo: provider.productInfo,
+                                ));
                           });
                     },
                     child: Text('Show Modal'),

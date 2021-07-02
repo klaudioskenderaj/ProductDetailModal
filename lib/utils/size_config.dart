@@ -11,7 +11,7 @@ class SizeConfig {
 
   void init(BuildContext context) {
     _mediaQueryData = MediaQuery.of(context);
-    if (_mediaQueryData.size.width >= _mediaQueryData.size.height) {
+    if (_mediaQueryData.size.width < _mediaQueryData.size.height) {
       screenWidth = _mediaQueryData.size.width;
       screenHeight = _mediaQueryData.size.height;
     } else {
